@@ -1,0 +1,212 @@
+/* Import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Dark grey text for readability */
+    -webkit-font-smoothing: antialiased; /* Smoother font rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container for overall content */
+.rss-container {
+    max-width: 800px; /* Limit content width for readability */
+    margin: 40px auto; /* Center content with vertical spacing */
+    padding: 30px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e9ecef; /* Subtle separator */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #212529; /* Darker heading color */
+    margin-bottom: 10px;
+    font-weight: 600; /* Semi-bold */
+}
+
+header p {
+    font-size: 1.1em;
+    color: #6c757d; /* Lighter grey for sub-text */
+    margin-top: 0;
+}
+
+/* Main Alerts Heading */
+.rss-container h2 {
+    text-align: center;
+    color: #212529;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6; /* Separator for alerts section */
+    font-weight: 500; /* Medium weight */
+}
+
+/* Individual RSS Item Styles */
+.rss-item {
+    border-bottom: 1px solid #e9ecef; /* Light separator between items */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.rss-item:last-child {
+    border-bottom: none; /* No border on the last item */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rss-item h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.rss-item h3 a {
+    color: #007bff; /* Standard blue for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.rss-item h3 a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+.rss-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #495057; /* Slightly darker text for description */
+}
+
+.rss-item .date {
+    font-size: 0.85em;
+    color: #868e96; /* Light grey for date */
+    margin-top: 8px;
+    display: block; /* Ensures date is on its own line */
+    font-weight: 300; /* Light weight for dates */
+}
+
+/* Messages (Loading, No Alerts, Error) */
+.error-message,
+.no-alerts-message {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.error-message {
+    color: #dc3545; /* Red for errors */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.no-alerts-message {
+    color: #6c757d; /* Grey for no alerts */
+    background-color: #e2e3e5;
+    border: 1px solid #d6d8db;
+}
+
+/* Disclaimer Styles */
+.disclaimer {
+    font-size: 0.85em;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px dashed #e9ecef; /* Dashed separator */
+}
+
+.disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef; /* Separator for footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .rss-container {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .rss-container h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .rss-item h3 {
+        font-size: 1.2em;
+    }
+
+    .rss-item p {
+        font-size: 0.9em;
+    }
+
+    .rss-item .date {
+        font-size: 0.8em;
+    }
+
+    .disclaimer,
+    footer {
+        font-size: 0.8em;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rss-container {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .rss-container h2 {
+        font-size: 1.3em;
+    }
+}
